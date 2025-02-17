@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mobile Exam</string>
+    <string name="ingresar_numero">Enter number</string>
+    <string name="filtrar">Filter</string>
+    <string name="mensaje_mostrando_todos">Showing all countries</string>
+    <string name="error_number">Invalid number</string>
+    <string name="nombre">Name</string>
+    <string name="idioma">Language</string>
+    <string name="poblacion">Population</string>
+    <string name="fecha_fundacion">Foundation Date</string>
+    <string name="seleccionar_bandera">Select flag</string>
+    <string name="anadir">Add</string>
+    <string name="salir">Exit</string>
+    <string name="datos_guardados">Data saved</string>
+    <string name="operacion_cancelada">Operation canceled</string>
+    <string name="seleccionar_idioma">Select language</string>
+    <string name="asignar">Assign</string>
+    <string name="cancelar">Cancel</string>
+    <string name="opcion_espanol">Spanish</string>
+    <string name="opcion_ingles">English</string>
+    <string name="guardar">Save</string>
+</resources>

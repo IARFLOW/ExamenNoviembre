@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Examen Moviles</string>
+    <string name="ingresar_numero">Ingrese número</string>
+    <string name="filtrar">Filtrar</string>
+    <string name="mensaje_mostrando_todos">Mostrando todos los países</string>
+    <string name="error_number">Número inválido</string>
+    <string name="nombre">Nombre</string>
+    <string name="idioma">Idioma</string>
+    <string name="poblacion">Población</string>
+    <string name="fecha_fundacion">Fecha de Fundación</string>
+    <string name="seleccionar_bandera">Seleccionar bandera</string>
+    <string name="anadir">Añadir</string>
+    <string name="salir">Salir</string>
+    <string name="datos_guardados">Datos guardados</string>
+    <string name="operacion_cancelada">Operación cancelada</string>
+    <string name="seleccionar_idioma">Seleccionar idioma</string>
+    <string name="asignar">Asignar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="opcion_espanol">Español</string>
+    <string name="opcion_ingles">Inglés</string>
+    <string name="guardar">Guardar</string>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_editar_pais"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Campo para el nombre del país -->
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:hint="@string/nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Campo de idioma (deshabilitado) -->
+
+    <!-- Campo para la población -->
+    <EditText
+        android:id="@+id/editTextIdioma"
+        android:layout_width="302dp"
+        android:layout_height="48dp"
+        android:hint="@string/idioma"
+        app:layout_constraintEnd_toStartOf="@+id/buttonBandera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
+
+    <!-- Campo para la fecha de fundación -->
+    <EditText
+        android:id="@+id/editTextPoblacion"
+        android:layout_width="379dp"
+        android:layout_height="51dp"
+        android:hint="@string/poblacion"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextIdioma" />
+
+    <EditText
+        android:id="@+id/editTextFecha"
+        android:layout_width="379dp"
+        android:layout_height="49dp"
+        android:hint="@string/fecha_fundacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextPoblacion" />
+
+    <!-- Botón con imagen de la bandera -->
+
+    <!-- Botón Guardar -->
+
+    <!-- Botón Cancelar -->
+
+    <ImageButton
+        android:id="@+id/buttonBandera"
+        android:layout_width="79dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="1dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/seleccionar_bandera"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bandera_es"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextIdioma"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
+
+    <Button
+        android:id="@+id/buttonGuardar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="@string/guardar"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCancelar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFecha" />
+
+    <Button
+        android:id="@+id/buttonCancelar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="@string/cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonGuardar"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFecha" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

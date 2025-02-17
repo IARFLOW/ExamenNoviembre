@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Ejemplo de tema que hereda de AppCompat -->
+    <style name="Base.Theme.ExamenNoviembre" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Personaliza los atributos que necesites -->
+        <!-- etc. -->
+    </style>
+    <style name="Theme.ExamenNoviembre" parent="Base.Theme.ExamenNoviembre" />
+
+</resources>
