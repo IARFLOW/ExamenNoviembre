@@ -11,10 +11,23 @@
      />
     <!-- Campo para el nombre del país -->
 
+    <TextView
+        android:id="@+id/textViewNombreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="56dp"
+        android:text="@string/nombre"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/editTextNombre"
-        android:layout_width="308dp"
-        android:layout_height="47dp"
+        android:layout_width="254dp"
+        android:layout_height="40dp"
         android:hint="@string/nombre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,35 +35,67 @@
     <!-- Campo de idioma (deshabilitado) -->
 
     <!-- Campo para la población -->
+
+    <TextView
+        android:id="@+id/textViewIdiomaLabel"
+        android:layout_width="96dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/idioma"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombreLabel" />
+
     <EditText
         android:id="@+id/editTextIdioma"
-        android:layout_width="302dp"
-        android:layout_height="48dp"
+        android:layout_width="176dp"
+        android:layout_height="44dp"
         android:hint="@string/idioma"
         app:layout_constraintEnd_toStartOf="@+id/buttonBandera"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
 
     <!-- Campo para la fecha de fundación -->
+
+    <TextView
+        android:id="@+id/textViewPoblacionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/poblacion"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIdiomaLabel" />
+
     <EditText
         android:id="@+id/editTextPoblacion"
-        android:layout_width="379dp"
-        android:layout_height="51dp"
+        android:layout_width="233dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="18dp"
         android:hint="@string/poblacion"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewPoblacionLabel"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIdioma" />
+
+    <TextView
+        android:id="@+id/textViewFechaLabel"
+        android:layout_width="92dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/fecha_fundacion"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextIdioma" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewPoblacionLabel" />
 
     <EditText
         android:id="@+id/editTextFecha"
-        android:layout_width="379dp"
-        android:layout_height="49dp"
+        android:layout_width="234dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="12dp"
         android:hint="@string/fecha_fundacion"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextPoblacion" />
+        app:layout_constraintStart_toEndOf="@+id/textViewFechaLabel"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPoblacion" />
 
     <!-- Botón con imagen de la bandera -->
 
@@ -61,14 +106,13 @@
     <ImageButton
         android:id="@+id/buttonBandera"
         android:layout_width="79dp"
-        android:layout_height="49dp"
+        android:layout_height="44dp"
         android:layout_marginTop="1dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/seleccionar_idioma"
         android:scaleType="fitCenter"
         android:src="@drawable/bandera_es"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextIdioma"
         app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
 
     <Button
