@@ -2,48 +2,58 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="8dp">
 
-    <!-- Nombre del país -->
-    <TextView
-        android:id="@+id/textViewNombre"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Nombre"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <!-- Icono Android -->
+
+    <!-- Nombre -->
 
     <!-- Idioma -->
-    <TextView
-        android:id="@+id/textViewIdioma"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Idioma"
-        app:layout_constraintTop_toBottomOf="@id/textViewNombre"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textViewPoblacion" />
 
     <!-- Población -->
+
+    <ImageView
+        android:id="@+id/imageViewIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="18dp"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="313dp"
+        android:layout_height="18dp"
+        android:text="Nombre"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewIdioma"
+        android:layout_width="61dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="18dp"
+        android:text="Idioma"
+        app:layout_constraintStart_toEndOf="@+id/imageViewIcon"
+        app:layout_constraintTop_toBottomOf="@id/textViewNombre" />
+
     <TextView
         android:id="@+id/textViewPoblacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
         android:text="Población"
-        app:layout_constraintTop_toBottomOf="@id/textViewNombre"
-        app:layout_constraintStart_toEndOf="@id/textViewIdioma"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <!-- Fecha de Fundación -->
-    <TextView
-        android:id="@+id/textViewFecha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fecha"
-        app:layout_constraintTop_toBottomOf="@id/textViewIdioma"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewNombre" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

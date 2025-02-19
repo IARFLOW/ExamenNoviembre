@@ -50,13 +50,11 @@ public class PaisAdapter extends BaseAdapter {
         TextView textViewNombre = view.findViewById(R.id.textViewNombre);
         TextView textViewIdioma = view.findViewById(R.id.textViewIdioma);
         TextView textViewPoblacion = view.findViewById(R.id.textViewPoblacion);
-        TextView textViewFecha = view.findViewById(R.id.textViewFecha);
 
         textViewNombre.setText(pais.getNombre());
         textViewIdioma.setText(pais.getIdioma());
         textViewPoblacion.setText(String.valueOf(pais.getPoblacion()));
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
-        textViewFecha.setText(sdf.format(pais.getFechaFundacion()));
 
         return view;
     }

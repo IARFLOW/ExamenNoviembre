@@ -3,7 +3,7 @@
     <string name="nombre">Name</string>
     <string name="idioma">Language</string>
     <string name="poblacion">Population</string>
-    <string name="fecha_fundacion">F.Date</string>
+    <string name="fecha_fundacion">F. Date</string>
     <string name="guardar">Save</string>
     <string name="cancelar">Cancel</string>
     <string name="datos_guardados">Data saved</string>
