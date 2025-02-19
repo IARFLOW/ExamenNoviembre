@@ -60,7 +60,7 @@
         android:id="@+id/textViewPoblacionLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:text="@string/poblacion"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,22 +75,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextIdioma" />
 
-    <TextView
-        android:id="@+id/textViewFechaLabel"
-        android:layout_width="125dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/fecha_fundacion"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/editTextFecha"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPoblacionLabel" />
-
     <!-- Botón con imagen de la bandera -->
 
     <!-- Botón Guardar -->
 
     <!-- Botón Cancelar -->
+
+    <TextView
+        android:id="@+id/textViewFechaLabel"
+        android:layout_width="125dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/fecha_fundacion"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextFecha"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPoblacionLabel" />
 
     <EditText
         android:id="@+id/editTextFecha"
@@ -116,7 +117,7 @@
         android:id="@+id/buttonGuardar"
         android:layout_width="105dp"
         android:layout_height="45dp"
-        android:layout_marginStart="84dp"
+        android:layout_marginStart="76dp"
         android:layout_marginTop="52dp"
         android:text="@string/guardar"
         app:layout_constraintStart_toStartOf="parent"
@@ -127,7 +128,7 @@
         android:layout_width="105dp"
         android:layout_height="45dp"
         android:layout_marginTop="52dp"
-        android:layout_marginEnd="84dp"
+        android:layout_marginEnd="76dp"
         android:text="@string/cancelar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextFecha" />
