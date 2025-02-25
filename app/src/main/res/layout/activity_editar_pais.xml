@@ -5,11 +5,10 @@
     android:id="@+id/activity_editar_pais"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    tools:ignore="ExtraText">
 
     <!-- Se traducirá según strings.xml -->
-     />
-    <!-- Campo para el nombre del país -->
 
     <TextView
         android:id="@+id/textViewNombreLabel"
@@ -26,15 +25,11 @@
 
     <EditText
         android:id="@+id/editTextNombre"
-        android:layout_width="253dp"
+        android:layout_width="254dp"
         android:layout_height="43dp"
         android:hint="@string/nombre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- Campo de idioma (deshabilitado) -->
-
-    <!-- Campo para la población -->
 
     <TextView
         android:id="@+id/textViewIdiomaLabel"
@@ -48,13 +43,11 @@
 
     <EditText
         android:id="@+id/editTextIdioma"
-        android:layout_width="176dp"
-        android:layout_height="44dp"
+        android:layout_width="189dp"
+        android:layout_height="42dp"
         android:hint="@string/idioma"
         app:layout_constraintEnd_toStartOf="@+id/buttonBandera"
         app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
-
-    <!-- Campo para la fecha de fundación -->
 
     <TextView
         android:id="@+id/textViewPoblacionLabel"
@@ -74,12 +67,6 @@
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextIdioma" />
-
-    <!-- Botón con imagen de la bandera -->
-
-    <!-- Botón Guardar -->
-
-    <!-- Botón Cancelar -->
 
     <TextView
         android:id="@+id/textViewFechaLabel"
@@ -103,15 +90,17 @@
 
     <ImageButton
         android:id="@+id/buttonBandera"
-        android:layout_width="79dp"
-        android:layout_height="44dp"
+        android:layout_width="65dp"
+        android:layout_height="38dp"
         android:layout_marginTop="1dp"
         android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
         android:contentDescription="@string/seleccionar_idioma"
         android:scaleType="fitCenter"
         android:src="@drawable/bandera_es"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
+
 
     <Button
         android:id="@+id/buttonGuardar"

@@ -2,18 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="8dp">
-
-    <!-- Icono Android -->
-
-    <!-- Nombre -->
-
-    <!-- Idioma -->
-
-    <!-- Población -->
 
     <ImageView
         android:id="@+id/imageViewIcon"
@@ -33,7 +24,7 @@
         android:id="@+id/textViewNombre"
         android:layout_width="313dp"
         android:layout_height="18dp"
-        android:text="Nombre"
+        android:text="@string/nombre"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -43,7 +34,7 @@
         android:layout_width="61dp"
         android:layout_height="20dp"
         android:layout_marginStart="18dp"
-        android:text="Idioma"
+        android:text="@string/idioma"
         app:layout_constraintStart_toEndOf="@+id/imageViewIcon"
         app:layout_constraintTop_toBottomOf="@id/textViewNombre" />
 
@@ -52,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="68dp"
-        android:text="Población"
+        android:text="@string/poblacion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewNombre" />
 
